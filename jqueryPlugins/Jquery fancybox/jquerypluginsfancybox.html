@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
+    />
+    <title>Jquery Plugins</title>
+</head>
+<body>
+	<div class="gallery">
+		<a href="b.jpg" class="teching">
+			<img src="a.jpg" alt="first">
+		</a>
+		<a href="a.jpg" class="teching">
+			<img src="b.jpg" alt="first">
+		</a>
+		<a href="a.jpg" class="teching">
+			<img src="b.jpg" alt="first">
+		</a>
+		<a href="b.jpg" class="teching">
+			<img src="a.jpg" alt="first">
+		</a>
+	</div>
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script>
+        $(".teching").fancybox();
+    </script>
+
+    <!--style-->
+    <style>
+       
+	.gallery{
+		display: flex;
+	}
+	img{
+		width: 100%;
+		display: inline-block;
+	}
+
+    </style>
+   
+</body>
+</html>
